@@ -1,0 +1,72 @@
+article {
+  background-color: white;
+  margin: 3rem 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 5px;
+  border-radius: 0.4rem;
+  font-size: large;
+  line-height: 1.5rem;
+  text-align: center;
+}
+article hr.maindiv {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+article h1 {
+  font-weight: normal;
+  /*padding-left: 2rem;*/
+}
+section {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+section p::before {
+  content: "\2001";
+}
+#docbody {
+  width: 100%;
+  max-width: 1600px;
+}
+#docmain {
+  flex: 1;
+}
+#docside {
+  order: 1;
+
+  display: none;
+}
+#docside a {
+  display: block;
+  width: 7rem;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: black;
+  /*margin: 0.5rem 0;*/
+}
+#sidestick {
+  top: 5rem;
+  position: sticky;
+  margin: 2rem;
+  padding: 1rem;
+  border-left: 3px solid black;
+}
+#docside a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 1200px) {
+  #docbody {
+    display: flex;
+  }
+  #docside {
+    display: block;
+  }
+}
